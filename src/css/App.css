@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #323441;
+    color: aliceblue;
+    font-family: "Nunito", sans-serif;
+}
+

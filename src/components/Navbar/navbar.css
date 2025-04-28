@@ -1,0 +1,45 @@
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:hover {
+    color: #f39cba;
+    transition: 0.25s;
+}
+
+header #navbar {
+    padding: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2a2e42;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.25);
+}
+
+header #navbar h1 {
+    font-size: 2rem;
+    color: #f39cba;
+    font-family: "Grenze", serif;
+    font-weight: 500;
+}
+
+header #navbar .nav-list {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 3rem;
+}
+
+header #navbar .nav-list .nav-item {
+    font-size: 20px;
+}
+
+header #navbar .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header #navbar .nav-brand #brand-img {
+    width: 6rem;
+}
