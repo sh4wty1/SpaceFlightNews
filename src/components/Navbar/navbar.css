@@ -4,7 +4,7 @@ a {
 }
 
 a:hover {
-    color: #f39cba;
+    color: #004fff;
     transition: 0.25s;
 }
 
@@ -18,7 +18,7 @@ header #navbar {
 
 header #navbar h1 {
     font-size: 2rem;
-    color: #f39cba;
+    color: #004fff;
     font-family: "Grenze", serif;
     font-weight: 500;
 }
