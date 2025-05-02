@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/Navbar/Navbar';
-import { Post } from './components/Posts/Post'
-import "./css/App.css"
+import { Post } from './components/Posts/Post';
+import "./css/App.css";
+import { ThreeDots } from 'react-loader-spinner';
 
 
 export const App = () => {
@@ -25,8 +26,18 @@ export const App = () => {
   return (
     <>
       <Navbar />
+      
       <section id='posts'>
-        {news.map((article) => (
+        {news.length === 0 ? (
+          <ThreeDots
+          height={80}
+          width={90}
+          radius={9}
+          color="white"
+          ariaLabel="loading"
+          wrapperStyle={{ display: 'flex', justifyContent: 'center', marginTop: '2rem' }}
+        />
+        ) : news.map((article) => (
           <Post key={article.id} title={article.title} provider={article.authors?.[0]?.name} paragraph={article.summary} thumbnail={article.image_url} url={article.url}/>
         ))}
       </section>
